@@ -18,21 +18,22 @@ class App extends Component{
       }]
     };
   }
+  newTodoChanged(event){
+    this.setState({
+      newTodo: event.target.value
+    });
+  }
   formSubmitted(event){
     event.preventDefault();
     // console.log(this.state.newTodo);
     this.setState({
+      newTodo: '',
       todos: [...this.state.todos, {
         title: this.state.newTodo,
         done: false
       }]
     });
   };
-  newTodoChanged(event){
-    this.setState({
-      newTodo: event.target.value
-    });
-  }
   render(){
     return (
       <div className="App">

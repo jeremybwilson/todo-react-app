@@ -16,3 +16,11 @@ input[type="checkbox"] {
   display: inline;
   width: auto;
 }
+
+ul {
+  list-style-type: none;
+}
+
+.done {
+  text-decoration: line-through;
+}

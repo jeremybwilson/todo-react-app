@@ -8,7 +8,6 @@ class App extends Component{
   constructor(){
     super();
     this.state = {
-      message1: 'Hello Jeremy',
       message2: 'Jeremy\'s React Todo App',
       newTodo: '',
       todos: [{

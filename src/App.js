@@ -64,7 +64,7 @@ class App extends Component{
     const todos = this.state.todos.map(todo => {  // map will create a new array
       // every todo, we will create a new object but done will be set to 'true'
       return {
-        title: todo.title,
+        title: todo.title,  // can also do ...todo (spread)
         done: true
       }
     })
